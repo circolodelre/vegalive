@@ -1,7 +1,7 @@
 #!/bin/bash
 
 apt update
-apt install -y curl git
+apt install -y curl git python
 
 adduser --disabled-password --gecos "" vegalive
 
@@ -13,7 +13,7 @@ git clone https://github.com/circolodelre/vegalive/
 cd vegalive
 ln -s /opt/dropbox ./.dropbox-dist
 ln -s /home/vegalive/Dropbox ./tournaments
-chmod +x .dropbox.py
+chmod +x dropbox.py
 cp dropbox /etc/init.d/
 chmod +x /etc/init.d/dropbox
 echo DROPBOX_USERS=\"vegalive\" > /etc/default/dropbox
