@@ -11,7 +11,9 @@ mkdir -p /home/vegalive/Dropbox
 cd /opt
 git clone https://github.com/circolodelre/vegalive/
 cd vegalive
+ln -s /opt/dropbox ./.dropbox-dist
 ln -s /home/vegalive/Dropbox ./tournaments
+chmod +x .dropbox.py
 cp dropbox /etc/init.d/
 chmod +x /etc/init.d/dropbox
 echo DROPBOX_USERS=\"vegalive\" > /etc/default/dropbox
