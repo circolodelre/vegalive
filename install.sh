@@ -14,4 +14,4 @@ cp dropbox /etc/init.d/
 
 chmod +x /etc/init.d/dropbox
 
-echo DROPBOX_USERS="sammy" > /etc/default/dropbox
+echo DROPBOX_USERS=\"sammy\" > /etc/default/dropbox
