@@ -1,7 +1,7 @@
 #!/bin/bash
 
-apt update
-apt install -y curl git python
+apt-get update
+apt-get install -y curl git python
 
 adduser --disabled-password --gecos "" vegalive
 
